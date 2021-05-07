@@ -4,7 +4,7 @@ def CSCAN(arr, head, size, disk_size):
     left = []
     right = []
     seek_sequence = []
-    total_disk_movement = 0
+    total_head_movement = 0
     track = 0
 
 
@@ -35,7 +35,7 @@ def CSCAN(arr, head, size, disk_size):
         distance = abs(track - head)
 
         # Add distance to total head movement
-        total_disk_movement += distance
+        total_head_movement += distance
 
         # Change the head to current track
         head = track
@@ -45,7 +45,7 @@ def CSCAN(arr, head, size, disk_size):
     head = 0
 
     # Add seek count for head returning from disk_size to 0
-    total_disk_movement += (disk_size - 1)
+    total_head_movement += (disk_size - 1)
 
     # Traverse through tracks to the left of the head
     for i in range(len(left)):
@@ -58,14 +58,13 @@ def CSCAN(arr, head, size, disk_size):
         distance = abs(track - head)
 
         # Add distance to total head movement
-        total_disk_movement += distance
+        total_head_movement += distance
 
         # Change the head to current track
         head = track
 
-    print("Total number of seek operations =",
-          total_disk_movement)
-    print("Seek Sequence is")
+    print(f"Total Head Movement: {total_head_movement}")
+    print("The disk seek sequence is: ")
     print(*seek_sequence, sep=" ")
 
 # Driver to test program
