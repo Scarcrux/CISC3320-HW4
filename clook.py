@@ -54,7 +54,9 @@ def CLOOK(arr, head, size):
 
             # Change the head to current track
             head = track
-
+    else:
+        # Add seek count for head returning from last right element to 0
+        total_head_movement += right[-1]
     print(f"Total Head Movement: {total_head_movement}")
     print("The disk seek sequence is: ")
     print(*seek_sequence, sep=" ")
