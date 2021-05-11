@@ -1,0 +1,23 @@
+FCFS:
+
+To implement the First Come-First Serve (FCFS) disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position and size of the tracks array. Create variables to track total head movement, distance calculations and current track.
+
+Iterate through the list of tracks: for every loop, set the current track, then calculate absolute distance from head to track. Add the distance to total heal movement. Change the head to the current track and continue to the next loop until every track has been processed.
+
+This will process tracks in the order they are received from the tracks array, which makes FCFS the least efficient disk scheduling algorithm. Print the total head movement and disk seek sequence.
+
+LOOK:
+
+To implement the LOOK disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position, initial direction and size of the tracks array. Create variables to track total head movement, distance calculations, current track, list of left tracks, list of right tracks and list of seek sequence.
+
+Iterate through the tracks list and add each to to left or right lists depending on direction from initial head position. Sort the tracks. Process tracks from the initial head position in the direction specified as a parameter.
+
+Iterate through the list of tracks: for every loop, set the current track, then calculate absolute distance from head to track. Add the distance to total heal movement. Change the head to the current track and continue to the next loop until every track has been processed. Finally, reverse the direction and repeat for remaining tracks. Print the total head movement and disk seek sequence.
+
+SSTF:
+
+To implement the Shortest Seek Time First (SSTF) disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position and size of the tracks list. Create variables to track total head movement, seek sequence and a 2D representation ([0, 0]) of each track. The 2D representation will indicate whether tracks have been accessed.
+
+Initialize the new track list and fill it with [0, 0] lists based on the size of the passed tracks list.
+
+Iterate through a list. Set variables for index to -1 and minimum to float('inf'). Add the current head to the seek sequence. Calculate distance from head to track. Using a loop, find the unaccessed track at minimum distance from head. Mark the accessed track as serviced. Add distance to total head movement. Change  head to the current track. Add head to the seek sequence. Print the total head movement and disk seek sequence.
