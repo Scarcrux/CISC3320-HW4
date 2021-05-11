@@ -1,0 +1,65 @@
+python3 fcfs.py
+
+Disk Scheduler Menu
+
+1: FCFS
+2: Quit
+
+Menu Selection: 1
+
+Enter initial head position: 100
+Total Head Movement: 90216
+
+The disk seek sequence is:
+4078 153 2819 3294 1433 211 1594 2004 2335 2007 771 1043 3950 2784 1881 2931 3599 1245 4086 520 3901 2866 947 3794 2353 3970 3948 1815 4621 372 2684 3088 827 3126 2083 584 4420 1294 917 2881 3659 2868 100 1581 4581 1664 1001 1213 3439 4706
+
+Disk Scheduler Menu
+
+1: FCFS
+2: Quit
+
+Menu Selection: 2
+
+python3 look.py
+
+Disk Scheduler Menu
+
+1: LOOK
+2: Quit
+
+Menu Selection: 1
+
+Enter initial head position: 100
+Total Head Movement: 4606
+
+The disk seek sequence is:
+153 211 372 520 584 771 827 917 947 1001 1043 1213 1245 1294 1433 1581 1594 1664 1815 1881 2004 2007 2083 2335 2353 2684 2784 2819 2866 2868 2881 2931 3088 3126 3294 3439 3599 3659 3794 3901 3948 3950 3970 4078 4086 4420 4581 4621 4706
+
+Disk Scheduler Menu
+
+1: LOOK
+2: Quit
+
+Menu Selection: 2
+
+python3 sstf.py
+
+Disk Scheduler Menu
+
+1: SSTF
+2: Quit
+
+Menu Selection: 1
+
+Enter initial head position: 100
+Total Head Movement: 4606
+
+The disk seek sequence is:
+100 100 153 211 372 520 584 771 827 917 947 1001 1043 1213 1245 1294 1433 1581 1594 1664 1815 1881 2004 2007 2083 2335 2353 2684 2784 2819 2866 2868 2881 2931 3088 3126 3294 3439 3599 3659 3794 3901 3948 3950 3970 4078 4086 4420 4581 4621 4706
+
+Disk Scheduler Menu
+
+1: SSTF
+2: Quit
+
+Menu Selection: 2

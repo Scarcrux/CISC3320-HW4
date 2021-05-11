@@ -1,10 +1,10 @@
-CISC 3320 Homework 4
+CISC 3320 Homework Extra Credit
 Author: Jonathan Scarpelli
 Role: Developer
 
 Problem Statement:
 
-Implement the FCFS, LOOK and SSTF disk scheduling algorithms on a data structure representation of a disk drive with 5000 cylinders.
+Implement the C-LOOK, C-SCAN and SCAN disk scheduling algorithms on a data structure representation of a disk drive with 5000 cylinders.
 
 Each algorithm should process the given list of 50 disk track numbers and initial head position, then find the total number of seek operations to access the tracks.
 

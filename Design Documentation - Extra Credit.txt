@@ -1,0 +1,21 @@
+C-LOOK:
+
+To implement the Circular LOOK (C-LOOK) disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position, initial direction, size of the tracks array and size of the disk. Create variables to track total head movement, distance calculations, current track, list of left tracks, list of right tracks and list of seek sequence.
+
+Add each track to left or right lists depending on direction from initial head position. Sort the tracks. Traverse through tracks to the right of the head: add track to seek sequence, calculate distance from head to track, add distance to total head movement, and change the head to current track. Now traverse through tracks to the left of the head. Add seek count for head returning from last right element to 0. Print the total head movement and disk seek sequence.
+
+C-SCAN:
+
+To implement the Circular SCAN (C-SCAN) disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position, initial direction, size of the tracks array and size of the disk. Create variables to track total head movement, distance calculations, current track, list of left tracks, list of right tracks and list of seek sequence.
+
+Add end values to left and right lists. Add each track to left or right depending on direction fromo head. Sort the tracks. Traverse through tracks to the right of the head: add track to seek sequence, calculate distance from head to track, add distance to total head movement, and change the head to current track.
+
+Once reached the right end jump to the beggining. Add seek count for head returning from disk_size to 0. Traverse through tracks to the left of the initial head position. Print the total head movement and disk seek sequence.
+
+SCAN:
+
+To implement the SCAN disk scheduling algorithm, create a function that accepts a list of tracks, initial disk head position, initial direction, size of the tracks array and size of the disk. Create variables to track total head movement, distance calculations, current track, list of left tracks, list of right tracks and list of seek sequence.
+
+First, set endpoints for left and right lists that represent the beginning and end of the disk. Then add each track to left or right lists depending on direction from initial head position. Sort the tracks.
+
+Process the direction specified as a parameter. Then process the opposite direction. Create a loop that sets the current track to the next track in the left or right lists, then add the track to the seek sequence, calculate distance from head to track, add distance to total head movement, and finally change head to the current track. Print the total head movement and disk seek sequence.
